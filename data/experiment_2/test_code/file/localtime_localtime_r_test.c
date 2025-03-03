@@ -1,0 +1,240 @@
+void test_localtime_r_up(void);
+void test_localtime_r_down(void);
+
+
+void test_localtime_r_up(void){
+
+	aunit_printf("\n##FUNCTION_START_localtime_r\n");
+ }
+
+void test_localtime_r_down(void){
+	aunit_printf("\n##FUNCTION_END_localtime_r\n");
+ }
+
+
+
+void abnormal_localtime_r_case(int index);
+
+void abnormal_localtime_r_case(int index){
+#ifdef INVALID_CASE
+	INVALID_CASE(index)
+#else
+	aunit_printf("ERROR:case_%d Not Exists\n",index);
+#endif /** INVALID_CASE */
+}
+
+void test_localtime_r_2(void){
+	//重复调用计数变量名
+ 	unsigned int aUnItCoUnTeR;
+	//声明参数对应的局部变量，若为基本类型赋默认值
+	time_t *t;
+	struct tm *tm;
+
+	//声明返回值局部变量，若为基本类型赋默认值
+	struct tm *returnValue = 0;
+
+	//值序列相关
+	time_t *valueList_0[]={(time_t *)t_PTRTO};
+	unsigned int listLength_0=1;
+	struct tm *valueList_1[]={(struct tm *)tm_PTRTO};
+	unsigned int listLength_1=1;
+	long int valueList_2[]={0};
+	unsigned int listLength_2=1;
+	long int valueList_3[]={1672531200};
+	unsigned int listLength_3=1;
+	int valueList_4[]={0};
+	unsigned int listLength_4=1;
+	int valueList_5[]={0};
+	unsigned int listLength_5=1;
+	int valueList_6[]={0};
+	unsigned int listLength_6=1;
+	int valueList_7[]={0};
+	unsigned int listLength_7=1;
+	int valueList_8[]={0};
+	unsigned int listLength_8=1;
+	int valueList_9[]={0};
+	unsigned int listLength_9=1;
+	int valueList_10[]={0};
+	unsigned int listLength_10=1;
+	int valueList_11[]={0};
+	unsigned int listLength_11=1;
+	int valueList_12[]={0};
+	unsigned int listLength_12=1;
+	int valueList_13[]={45};
+	unsigned int listLength_13=1;
+	int valueList_14[]={12};
+	unsigned int listLength_14=1;
+	int valueList_15[]={0};
+	unsigned int listLength_15=1;
+	int valueList_16[]={30};
+	unsigned int listLength_16=1;
+	int valueList_17[]={123};
+	unsigned int listLength_17=1;
+	int valueList_18[]={0};
+	unsigned int listLength_18=1;
+	int valueList_19[]={0};
+	unsigned int listLength_19=1;
+	int valueList_20[]={0};
+	unsigned int listLength_20=1;
+	int valueList_21[]={1};
+	unsigned int listLength_21=1;
+	//值个数不够时是否沿用最后一个值 1=使用 0=不使用
+	unsigned char useLast_0=0;
+	unsigned char useLast_1=0;
+	unsigned char useLast_2=0;
+	unsigned char useLast_3=0;
+	unsigned char useLast_4=0;
+	unsigned char useLast_5=0;
+	unsigned char useLast_6=0;
+	unsigned char useLast_7=0;
+	unsigned char useLast_8=0;
+	unsigned char useLast_9=0;
+	unsigned char useLast_10=0;
+	unsigned char useLast_11=0;
+	unsigned char useLast_12=0;
+	unsigned char useLast_13=0;
+	unsigned char useLast_14=0;
+	unsigned char useLast_15=0;
+	unsigned char useLast_16=0;
+	unsigned char useLast_17=0;
+	unsigned char useLast_18=0;
+	unsigned char useLast_19=0;
+	unsigned char useLast_20=0;
+	unsigned char useLast_21=0;
+	//调用初始化函数
+
+	//为case_count全局变量赋值
+	case_id=2;
+	//初始化各桩函数调用计数器
+	localtime_call_counter = 0;
+	memcpy_call_counter = 0;
+
+	aunit_printf("###TEST_TREE_test_localtime_r_2,false,0\n");
+	aunit_printf("#CASE_START_test_localtime_r_2\n");
+	//循环计数器,为用户变量/返回值赋值
+	for(aUnItCoUnTeR=0;aUnItCoUnTeR<1;aUnItCoUnTeR++){
+		if(aUnItCoUnTeR<listLength_0 || useLast_0){
+			t=(time_t *)valueList_0[aUnItCoUnTeR<listLength_0?aUnItCoUnTeR:listLength_0-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_1 || useLast_1){
+			tm=(struct tm *)valueList_1[aUnItCoUnTeR<listLength_1?aUnItCoUnTeR:listLength_1-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_2 || useLast_2){
+			t_PTRTO[1]=(long int)valueList_2[aUnItCoUnTeR<listLength_2?aUnItCoUnTeR:listLength_2-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_3 || useLast_3){
+			t_PTRTO[0]=(long int)valueList_3[aUnItCoUnTeR<listLength_3?aUnItCoUnTeR:listLength_3-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_4 || useLast_4){
+			(tm_PTRTO[0]).tm_min=(int)valueList_4[aUnItCoUnTeR<listLength_4?aUnItCoUnTeR:listLength_4-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_5 || useLast_5){
+			(localtime_returnValue_PTRTO[0]).tm_yday=(int)valueList_5[aUnItCoUnTeR<listLength_5?aUnItCoUnTeR:listLength_5-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_6 || useLast_6){
+			(tm_PTRTO[0]).tm_year=(int)valueList_6[aUnItCoUnTeR<listLength_6?aUnItCoUnTeR:listLength_6-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_7 || useLast_7){
+			(localtime_returnValue_PTRTO[0]).tm_isdst=(int)valueList_7[aUnItCoUnTeR<listLength_7?aUnItCoUnTeR:listLength_7-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_8 || useLast_8){
+			(localtime_returnValue_PTRTO[0]).tm_mon=(int)valueList_8[aUnItCoUnTeR<listLength_8?aUnItCoUnTeR:listLength_8-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_9 || useLast_9){
+			(tm_PTRTO[0]).tm_sec=(int)valueList_9[aUnItCoUnTeR<listLength_9?aUnItCoUnTeR:listLength_9-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_10 || useLast_10){
+			(tm_PTRTO[0]).tm_mon=(int)valueList_10[aUnItCoUnTeR<listLength_10?aUnItCoUnTeR:listLength_10-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_11 || useLast_11){
+			(tm_PTRTO[0]).tm_yday=(int)valueList_11[aUnItCoUnTeR<listLength_11?aUnItCoUnTeR:listLength_11-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_12 || useLast_12){
+			(tm_PTRTO[0]).tm_mday=(int)valueList_12[aUnItCoUnTeR<listLength_12?aUnItCoUnTeR:listLength_12-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_13 || useLast_13){
+			(localtime_returnValue_PTRTO[0]).tm_min=(int)valueList_13[aUnItCoUnTeR<listLength_13?aUnItCoUnTeR:listLength_13-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_14 || useLast_14){
+			(localtime_returnValue_PTRTO[0]).tm_hour=(int)valueList_14[aUnItCoUnTeR<listLength_14?aUnItCoUnTeR:listLength_14-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_15 || useLast_15){
+			(tm_PTRTO[0]).tm_wday=(int)valueList_15[aUnItCoUnTeR<listLength_15?aUnItCoUnTeR:listLength_15-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_16 || useLast_16){
+			(localtime_returnValue_PTRTO[0]).tm_sec=(int)valueList_16[aUnItCoUnTeR<listLength_16?aUnItCoUnTeR:listLength_16-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_17 || useLast_17){
+			(localtime_returnValue_PTRTO[0]).tm_year=(int)valueList_17[aUnItCoUnTeR<listLength_17?aUnItCoUnTeR:listLength_17-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_18 || useLast_18){
+			(localtime_returnValue_PTRTO[0]).tm_wday=(int)valueList_18[aUnItCoUnTeR<listLength_18?aUnItCoUnTeR:listLength_18-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_19 || useLast_19){
+			(tm_PTRTO[0]).tm_hour=(int)valueList_19[aUnItCoUnTeR<listLength_19?aUnItCoUnTeR:listLength_19-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_20 || useLast_20){
+			(tm_PTRTO[0]).tm_isdst=(int)valueList_20[aUnItCoUnTeR<listLength_20?aUnItCoUnTeR:listLength_20-1];
+
+		}
+		if(aUnItCoUnTeR<listLength_21 || useLast_21){
+			(localtime_returnValue_PTRTO[0]).tm_mday=(int)valueList_21[aUnItCoUnTeR<listLength_21?aUnItCoUnTeR:listLength_21-1];
+
+		}
+		returnValue = localtime_r(t,tm);
+	}
+	//输出监视的表达式的值,如果用例的该表达式已有预期,则忽略
+	OB_INT_EXPR("localtime_r","returnValue",returnValue)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_mon",0,tm->tm_mon)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_yday",0,tm->tm_yday)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_sec",30,tm->tm_sec)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_hour",12,tm->tm_hour)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_year",123,tm->tm_year)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_min",45,tm->tm_min)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_wday",0,tm->tm_wday)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_isdst",0,tm->tm_isdst)
+	TEST_ASSERT_EQUAL_INT("localtime_r","tm->tm_mday",1,tm->tm_mday)
+
+	//预期用例中各桩函数调用次数
+	OB_INT_EXPR("localtime","localtime_call_counter",localtime_call_counter)
+	OB_INT_EXPR("memcpy","memcpy_call_counter",memcpy_call_counter)
+
+	aunit_printf("#CASE_END_test_localtime_r_2\n");
+}
+
+void aunit_test_func_run(int caseIndex){
+
+	test_localtime_r_up();
+
+	switch(caseIndex){
+	case 2:
+		test_localtime_r_2();
+		break;
+	default:
+		abnormal_localtime_r_case(caseIndex);
+		break;
+	}
+
+	test_localtime_r_down();
+}
+
