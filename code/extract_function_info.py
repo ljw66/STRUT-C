@@ -153,7 +153,7 @@ def is_builtin_type(var_type):
     :return: True if it is a basic type, otherwise False
     """
     kind = var_type.kind
-    # 判断类型是否为基本类型
+    # Determine whether the type is a basic type
     return kind in [
         cindex.TypeKind.VOID,
         cindex.TypeKind.BOOL,
