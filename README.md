@@ -1,7 +1,7 @@
 # Experimental Data and Code for Our Research  
 
 ## Overview  
-Due to the involvement of commercial tools in our work, we do not have the rights to open-source all code. In this repository, we provide partial experimental code and datasets from six open-source projects. However, real-world project data, which contain industrial software-related information, cannot be shared.  
+Due to the involvement of commercial tools in our work, we do not have the rights to open-source all code. In this repository, we provide partial experimental code.
 
 ## `code`  
 The `code` folder includes part of the code used in our experiments, covering:  
