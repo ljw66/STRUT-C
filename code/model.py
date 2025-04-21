@@ -17,7 +17,7 @@ def get_deepseek():
         openai_api_key='',
         openai_api_base='',
         # max_tokens=8192,
-        temperature=0.2
+        temperature=0.5
     )
 
 
