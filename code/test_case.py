@@ -73,13 +73,13 @@ def make_case_list(data, has_stub: bool, default_PTR):
             elif item['value_int'] is not None:
                 item['value'] = int(item['value_int'])
             elif item['value_bracket'] is not None:
-                '''处理数组值'''
+                '''array value'''
                 expr = item['expr']
                 bracket_value = item['value_bracket'].split(',')
                 i = 0
                 for value in bracket_value:
                     value = value.replace(' ', '')
-                    # 判断数组值类型
+                    # get array type
                     if determine_type(value) == 'Integer':
                         value = int(value)
                     elif determine_type(value) == 'Float':
@@ -102,13 +102,13 @@ def make_case_list(data, has_stub: bool, default_PTR):
             del item['value_float']
             del item['value_int']
             del item['value_bracket']
-        # 删除原始数据
+        # delete data
         for i in range(len(input_list) - 1, -1, -1):
             if input_list[i]['value'] == 'delete':
                 del input_list[i]
         for item in bracket_list:
             input_list.append(item)
-        # 处理输出中的 value，将其转为对应的类型
+        # convert type
         for item in output_list:
             if item['value_hex'] is not None:
                 item['value'] = item['value_hex']  # 处理十六进制数
