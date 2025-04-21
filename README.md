@@ -3,9 +3,7 @@
 ## Overview  
 Due to the involvement of commercial tools in our work, we do not have the rights to open-source all code. In this repository, we provide partial experimental code and datasets from six open-source projects. However, real-world project data, which contain industrial software-related information, cannot be shared.  
 
-## Repository Structure  
-
-### `code`  
+## `code`  
 The `code` folder includes part of the code used in our experiments, covering:  
 - **Dependency analysis algorithms**: Implementations of algorithms used to identify dependencies.  
 - **Prompt generation**: Scripts for generating structured prompts for LLMs.  
